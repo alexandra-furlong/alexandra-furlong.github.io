@@ -7,15 +7,20 @@
         <!-- box icons -->
         <link rel="stylesheet"
         href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+        </style>
     </head>
     <body class="bg-background">
-        <!-- header -->
-        <header class="fixed top-0 right-0 left-0 md:py-1 transition-all duration-300">
+        <!-- NAV BAR -->
+        <header id= "header" class="fixed top-0 right-0 left-0 md:py-1 transition-all duration-300">
             <nav class="max-w-7x1 mx-auto bg-white bg-opacity-90 md:bg-transparent p-5">
                 <div class="flex items-center justify-between">
                     <a href="/" class=" text-primary font-bold text-lg flex items-center gap-3"> <img src="./img/icon.png" alt="" class="w-8 h-8"> Portfolio </a>
                 
-                    <!-- nav only for large device -->
+                    <!-- desktop nav bar -->
                     <div class="hidden md:flex space-x-10">
                         <a href="#home" class="text-primary hover:text-gray-300">Home</a>
                         <a href="#projects" class="text-primary hover:text-gray-300">Projects</a>
@@ -23,7 +28,7 @@
                         <a href="#contact" class="text-primary hover:text-gray-300">Contact</a>
                     </div>
 
-                    <!-- menu button, only visible on -->
+                    <!-- mobile nav button -->
                     <div class="md:hidden">
                         <button id="mobile-menu-button" class="text-primary text-2xl">
                             <i class='bx bx-menu'></i>
@@ -32,7 +37,7 @@
 
                 </div>
 
-                <!-- mobile menu -->
+                <!-- mobile nav bar -->
                 <div id="mobile-menu" class="hidden md:hidden">
                     <a href="#home" class="text-primary hover:text-gray-300 block py-2 hover:bg-gray-400">Home</a>
                     <a href="#projects" class="text-primary hover:text-gray-300 block py-2 hover:bg-gray-400">Projects</a>
@@ -41,13 +46,12 @@
             </nav>
         </header>
 
-        <!-- banner section -->
+        <!-- HOME -->
         <section id="home" class="max-w-7xl mx-auto px-5 my-12">
             <div class="py-10 text-white flex flex-col md:flex-row justify-between items-center gap-4">
 
                 <!-- left side -->
                 <div class="md:w-1/2 flex flex-col items-center">
-                <!-- <div class="md:w-1/2"> -->
                     <p class="text-xl font-inter font-medium mb-4">Hi there! I'm <span class="text-primary">Alexandra Furlong.</span></p>
                     <p class="text-xl mb-12 md:w-3/4 text-justify leading-8">I'm a recent graduate from the University of California, Santa Cruz. I enjoy finding ways to blend my passion for programming with storytelling, music & art! Whether it's animation, web or game development, I love to collaborate with artists & other developers to bring impactful stories to life through stunning visuals developed by innovative techniques.</p>
                     <button class="py-4 px-10 rounded-md bg-primary text-white font-bold hover:bg-gray-400">Let's Talk</button>
@@ -66,18 +70,21 @@
                 </div>
 
                 <!-- right side -->
-                <div class="md:w-1/2 order-first md:order-none">
-                    <img src="./img/pfp_icon_border.png" alt="" class="md:ml-20" style="width: 550px;">
+                <div class="md:w-1/2">
+                    <img src="./img/pfp_icon_border.png" alt="" class="md:ml-20" style="width: 500px;">
                 </div>
 
             </div>
         </section>
 
-        <section id="projects" class="max-w-7xl mx-auto px-5 my-12">
-            <h2 ckass="text-3x1 font-semibold text-primary mb-8">My Projects</h2>
+        <!-- PROJECTS -->
+        <section class="max-w-7xl mx-auto px-5 my-6 text-primary" id="projects">
+                <div class="text-center"> 
+                    <h2 class="font-monstserrat font-bold">My Projects</h2>
+                </div>
         </section>
         
         <!-- script tags -->
-        <script src="../src/app.js"></script>
+        <script src="../src/app.js" type="module"></script>
     </body>
 </html>

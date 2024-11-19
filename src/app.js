@@ -1,4 +1,4 @@
-function App() {
+function app() {
     const mobileMenuButton = document.getElementById("mobile-menu-button");
     const mobileMenu = document.getElementById("mobile-menu");
 
@@ -7,4 +7,6 @@ function App() {
     })
 }
 
-export default app
+app();
+
+export default app;
