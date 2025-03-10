@@ -11,7 +11,10 @@ import Link from "next/link";
 
 export default function Intro() {
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
+    <section
+      id="home"
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+    >
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -40,7 +43,8 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        Hi there, I'm <span className="font-bold text-primary">Alexandra</span>!
+        Hi there, I&apos;m{" "}
+        <span className="font-bold text-primary">Alexandra</span>!
       </motion.p>
 
       <motion.p
@@ -48,7 +52,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        I'm a recent graduate from the{" "}
+        I&apos;m a recent graduate from the{" "}
         <span className="font-bold text-primary">
           University of California, Santa Cruz
         </span>
@@ -60,7 +64,8 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        Whether it's <span className="font-bold text-primary">animation</span>,{" "}
+        Whether it&apos;s{" "}
+        <span className="font-bold text-primary">animation</span>,{" "}
         <span className="font-bold text-primary">web</span> or{" "}
         <span className="font-bold text-primary">game development</span>, I love
         to collaborate with artists & other developers to bring impactful
