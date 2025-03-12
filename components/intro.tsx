@@ -81,6 +81,7 @@ export default function Intro() {
         }}
       >
         <a
+          href="https://github.com/alexandra-furlong"
           className="bg-secondary/80 text-primary px-7 py-3
          flex items-center gap-2 rounded-full outline-none focus:scale-110 
           hover:scale-110 active:scale-105 hover:text-white hover:bg-secondaryFocus 
@@ -90,6 +91,7 @@ export default function Intro() {
         </a>
 
         <a
+          href="https://www.linkedin.com/in/alexandra-furlong-360813120/"
           className="bg-secondary/80 text-primary px-7 py-3 
         flex items-center gap-2 rounded-full outline-none focus:scale-110 
           hover:scale-110 active:scale-105 hover:text-white hover:bg-secondaryFocus 
@@ -99,13 +101,19 @@ export default function Intro() {
         </a>
 
         <Link
-          href="#contact"
+          href="mailto:alexandra.furlong99@gmail.com"
           className="bg-secondary/80 text-primary px-7 py-3 
           flex items-center gap-2 rounded-full outline-none focus:scale-110 
           hover:scale-110 active:scale-105 hover:text-white hover:bg-secondaryFocus
           transition border border-secondaryFocus"
         >
-          {" "}
+          {/* <Link
+          href="#contact"
+          className="bg-secondary/80 text-primary px-7 py-3 
+          flex items-center gap-2 rounded-full outline-none focus:scale-110 
+          hover:scale-110 active:scale-105 hover:text-white hover:bg-secondaryFocus
+          transition border border-secondaryFocus"
+        > */}{" "}
           Email <MdOutlineEmail className="opacity-70" />
         </Link>
       </motion.div>
